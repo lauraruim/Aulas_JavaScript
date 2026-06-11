@@ -31,16 +31,27 @@
     <script>
         window.alert("Seja bem-vindo ao site ");
         let num1 = window.prompt("Solicite o primeiro número: ");
-        num1 =  parseInt(num1);
+        num1 = parseInt(num1);
 
         let num2 = window.prompt("Solicite o segundo número: ");
-        num2 =  parseInt(num2);
+        num2 = parseInt(num2);
 
         let op = window.prompt("Qual tipo de operação? ")
-        
-        
-        
-     
+
+        num1 = parseInt(num1)
+        num2 =  parseInt(num2)
+        let resultado = 0
+        if (op=="+"){
+            resultado = num1 + num2
+        }else{
+            resultado = num1 - num2
+        }
+        window.alert(resultado)        
+
+
+
+
+
 
     </script>
 </body>
