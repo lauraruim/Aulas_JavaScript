@@ -26,9 +26,12 @@
 
 
 <body>
-    <h1>OLÁ MUNDO EM JS: <mark>ALERT</mark></h1>
+    <h1>Integrando os resursos <mark>Documento</mark></h1>
+
     <hr>
+    <p></p>
     <script>
+        
         window.alert("Seja bem-vindo ao site ");
         let num1 = window.prompt("Solicite o primeiro número: ");
         num1 = parseInt(num1);
@@ -36,7 +39,7 @@
         let num2 = window.prompt("Solicite o segundo número: ");
         num2 = parseInt(num2);
 
-        let op = window.prompt("Qual tipo de operação? - ou +?")
+        let op = window.prompt("Qual tipo de operação? ")
 
         num1 = parseInt(num1)
         num2 =  parseInt(num2)
@@ -46,11 +49,9 @@
         }else{
             resultado = num1 - num2
         }
-        window.alert(resultado)        
 
-
-
-
+        
+        document.getElementsByTagName("p")[0].innerText=" O reultado é: "+resultado  
 
 
     </script>
